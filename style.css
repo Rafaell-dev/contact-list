@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-text);
+}
+:root {
+  font-size: 62.5%;
+  --ff-text: 'Roboto', 'sans-serif';
+  --fs-primary: #e1e1e6;
+  --fs-secondary: #8c8cba;
+
+  --bg-primary: #1a1924;
+  --bg-secondary: #16151e;
+}
+:focus {
+  outline: 1px solid #8c8cba;
+}
+::placeholder {
+  color: #e1e1e6;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+body::before {
+  content: '';
+  min-height: 18rem;
+  width: 100vw;
+  background-color: var(--bg-secondary);
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+header .container {
+  margin: 4rem;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-family: var(--ff-text);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: var(--fs-primary);
+}
+.row-1 {
+  display: flex;
+  justify-content: space-between;
+}
+header .buttons-icon {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.buttons-icon button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+header input {
+  height: 40px;
+  width: 100%;
+  margin-top: 24px;
+
+  background-color: #24243d;
+  border: none;
+  border-radius: 5px;
+  padding: 1.6rem 2.4rem;
+  color: var(--fs-secondary);
+
+  background-image: url(assets/search-icon.svg);
+  background-repeat: no-repeat;
+  padding-left: 5.5rem;
+  background-position: 2.5rem center;
+}
+.contacts-list {
+  display: flex;
+  padding: 4.8rem 4.8rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 5.6rem;
+}
+.contact-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 1.6rem;
+}
+.contact-row img {
+  height: 100%;
+  object-fit: cover;
+}
+h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: var(--fs-primary);
+}
+p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--fs-secondary);
+}
+span {
+  color: var(--fs-primary);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  margin-right: 3.2rem;
+  padding: 1.6rem 2rem;
+  border-radius: 8px;
+  background-color: #633bbc;
+}
+.contact-details p {
+  margin-top: 0.4rem;
+}
+.hidden {
+  visibility: hidden;
+}
+.contact-row:nth-child(2) span {
+  background: #07847e;
+}
+
+.contact-row:nth-child(3) span {
+  background: #9a00b3;
+}
+
+.contact-row:nth-child(4) span {
+  background: #0088b3;
+}
